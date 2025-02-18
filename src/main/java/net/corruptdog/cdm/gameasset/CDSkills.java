@@ -3,7 +3,6 @@ package net.corruptdog.cdm.gameasset;
 import java.util.Set;
 
 import net.corruptdog.cdm.main.CDmoveset;
-import net.corruptdog.cdm.skill.Dodge.EXYamatoDodge;
 import net.corruptdog.cdm.skill.Dodge.WolfDodge;
 import net.corruptdog.cdm.skill.weaponinnate.*;
 import net.corruptdog.cdm.world.item.CDAddonItems;
@@ -15,10 +14,7 @@ import yesman.epicfight.api.data.reloader.SkillManager;
 import yesman.epicfight.api.forgeevent.SkillBuildEvent;
 import yesman.epicfight.api.utils.math.ValueModifier;
 import yesman.epicfight.gameasset.Animations;
-import yesman.epicfight.main.EpicFightMod;
-import yesman.epicfight.skill.BattojutsuPassive;
 import yesman.epicfight.skill.Skill;
-import yesman.epicfight.skill.SkillCategories;
 import yesman.epicfight.skill.dodge.DodgeSkill;
 import yesman.epicfight.skill.dodge.StepSkill;
 import yesman.epicfight.skill.weaponinnate.SimpleWeaponInnateSkill;
@@ -40,10 +36,8 @@ public class CDSkills {
     public static Skill BLADE_RUSH_FINISHER;
     public static Skill KATANASPSKILL;
     public static Skill BLOODWOLF;
-    public static Skill YAMATO_PASSIVE;
     public static Skill BLADE_RUSH;
     public static Skill YAMATO_STEP;
-    public static Skill EX_YAMATO_STEP;
     public static Skill SSTEP;
     public static Skill BSTEP;
     public static Skill WOLF_DODGE;
@@ -69,13 +63,6 @@ public class CDSkills {
         SkillManager.register(StepSkill::new, DodgeSkill.createDodgeBuilder().setAnimations(new ResourceLocation(CDmoveset.MOD_ID, "biped/new/dodge/step_forward"), new ResourceLocation(CDmoveset.MOD_ID, "biped/new/dodge/step_backward"), new ResourceLocation(CDmoveset.MOD_ID, "biped/new/dodge/step_left"), new ResourceLocation(CDmoveset.MOD_ID, "biped/new/dodge/step_right")).setCreativeTab(CDAddonItems.CREATIVE_MODE_TAB), CDmoveset.MOD_ID, "sstep");
         SkillManager.register(KatanaSkill::new, WeaponInnateSkill.createWeaponInnateBuilder(), CDmoveset.MOD_ID, "katanaskill");
         SkillManager.register(ShiledSlash::new, WeaponInnateSkill.createWeaponInnateBuilder(), CDmoveset.MOD_ID, "shiled_slahs");
-        SkillManager.register(EXYamatoDodge::new, DodgeSkill.createDodgeBuilder().setAnimations(new ResourceLocation(CDmoveset.MOD_ID, "biped/new/yamato_step_forward"), new ResourceLocation(CDmoveset.MOD_ID, "biped/new/yamato_step_backward"), new ResourceLocation(CDmoveset.MOD_ID,"biped/new/yamato_step_left"), new ResourceLocation(CDmoveset.MOD_ID, "biped/new/yamato_step_right"), new ResourceLocation(CDmoveset.MOD_ID,"biped/new/yamato_obscuris")), CDmoveset.MOD_ID, "ex_yamato_step");
-
-
-        SkillManager.register(YamatoPassive::new, Skill.createBuilder().setCategory(SkillCategories.WEAPON_PASSIVE).setActivateType(Skill.ActivateType.ONE_SHOT).setResource(Skill.Resource.NONE), CDmoveset.MOD_ID, "yamato_passive");
-//        SkillManager.register(YamatoPassive::new, Skill.createBuilder().setCategory(SkillCategories.WEAPON_PASSIVE), CDmoveset.MOD_ID, "yamato_passive");
-
-
 
         SkillManager.register(WolfDodge::new, WolfDodge.createDodgeBuilder()
                         .setAnimations1(
@@ -105,8 +92,6 @@ public class CDSkills {
     public static void BuildSkills(SkillBuildEvent onBuild) {
         WOLF_DODGE = onBuild.build(CDmoveset.MOD_ID, "wolf_dodge");
         YAMATO_STEP = onBuild.build(CDmoveset.MOD_ID, "yamato_step");
-        EX_YAMATO_STEP = onBuild.build(CDmoveset.MOD_ID, "ex_yamato_step");
-        YAMATO_PASSIVE = onBuild.build(CDmoveset.MOD_ID, "yamato_passive");
         SSTEP = onBuild.build(CDmoveset.MOD_ID, "sstep");
         WeaponInnateSkill swordslash = onBuild.build(CDmoveset.MOD_ID, "sword_slash");
         swordslash.newProperty()

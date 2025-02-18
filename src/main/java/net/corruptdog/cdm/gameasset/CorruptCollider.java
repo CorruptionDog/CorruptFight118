@@ -30,8 +30,7 @@ public class CorruptCollider {
     public static final Collider CONQUEROR_HAKI = new OBBCollider(24.0, 4.5, 24.0, 0.0, 1.75, 0.0);
     public static final Collider RISING = new OBBCollider(1.7D, 1.0D, -3.5D, 0.0D, 1.0D, -2.5D);
     public static final Collider POWER = new OBBCollider(9, 3.5, 9, 0.0, 3, 0);
-    public static final Collider DAWN = new OBBCollider(0.6D, 2.5D, 2.0D, 0.0D, 1.25D, -0.75D);
-    public static final Collider RISING_STAR = new MultiOBBCollider(3, 0.2D, 0.8D, 2.5D, 0.0D, 0.0D, -0.5D);
+
     public CorruptCollider() {
     }
 }
