@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "cdmoveset:s_diamondlongsword"
+    },
+    "addition": {
+        "item" : "minecraft:netherite_ingot"
+    },
+    "result": {
+        "item": "cdmoveset:s_netheritelongsword"
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"attributes":
+	{
+		"two_hand":
+		{
+
+			"armor_negation":15.0,
+			"max_strikes": 1,
+			"impact":1.7
+		}
+	},
+	"type":"cdmoveset:s_tachi"
+}

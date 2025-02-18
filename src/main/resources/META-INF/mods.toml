@@ -1,0 +1,51 @@
+
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All Rights Reserved"
+
+[[mods]] #mandatory
+# The modid of the mod
+modId="cdmoveset" #mandatory
+
+version="1.0" #mandatory
+
+isplayName="resurrection" #mandatory
+
+displayName="EpicFight-Resurrection" #mandatory
+
+
+authors="main:CorruptDog,animation:Asanginxst,Moglasses,Yonchi Chikito,namelesssLK,slow time:MegaDarkness()" #optional
+logoFile="icon.png"
+
+description='''Added more mechanisms and weapons for Epic-fight.'''
+
+
+[[dependencies.cdmoveset]] #optional
+modId="forge" #mandatory
+mandatory=true #mandatory
+versionRange="[40,)" #mandatory
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cdmoveset]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.2]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cdmoveset]]
+modId="epicacg"
+mandatory=true
+versionRange="[18.5.21,)"
+ordering="BEFORE"
+side="BOTH"
+
+[[dependencies.cdmoveset]]
+modId="epicfight"
+mandatory=true
+versionRange="[18.5.24,)"
+ordering="BEFORE"
+side="BOTH"

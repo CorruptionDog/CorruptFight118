@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "cdmoveset:katana"
+    },
+    "addition": {
+        "item" : "minecraft:nether_star"
+    },
+    "result": {
+        "item": "cdmoveset:yamato"
+    }
+}

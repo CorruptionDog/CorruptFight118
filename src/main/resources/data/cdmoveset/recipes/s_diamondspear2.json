@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " BB",
+        " SB",
+        "B  "
+    ],
+    
+    "key":
+    {
+        "B": { "item" : "minecraft:diamond" },
+        "S": { "item" : "epicfight:diamond_spear" }
+    },
+    
+    "result":
+    {
+        "item" : "cdmoveset:s_diamondspear",
+        "count" : 1
+    }
+}

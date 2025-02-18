@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " DB",
+        " SD",
+        "S  "
+    ],
+    
+    "key":
+    {
+        "B": { "item" : "cdmoveset:s_ironsword" },
+        "D": { "item" : "minecraft:iron_ingot" },
+        "S": { "item" : "minecraft:stick" }
+    },
+    
+    "result":
+    {
+        "item" : "cdmoveset:s_ironspear",
+        "count" : 1
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "attributes":
+  {
+    "two_hand":
+    {
+      "speed_bonus": -0.15,
+      "impact":4.3,
+      "max_strikes":4,
+      "damage_bonus": 1
+    },
+    "one_hand":
+    {
+      "impact": 2.5,
+      "max_strikes":2
+    }
+  },
+  "type":"cdmoveset:s_greatsword"
+}

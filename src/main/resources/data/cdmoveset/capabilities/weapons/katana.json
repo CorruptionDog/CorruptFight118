@@ -1,0 +1,12 @@
+{
+	"attributes":
+	{
+		"two_hand":
+		{
+			"speed_bonus": -0.30,
+			"impact":0.8,
+			"max_strikes":2
+		}
+	},
+	"type":"cdmoveset:katana"
+}

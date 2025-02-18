@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "net.corruptdog.cdm.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cdmoveset.mixin-refmap.json",
+  "mixins": [
+    "AnimationMixin",
+    "BattojutsuPassiveMixin",
+    "DodgeSkillMixin",
+    "EpicFightSkillsMixin",
+    "GuardMixin",
+    "ParryingMixin",
+    "RushingTempoSkillMixin",
+    "TechnicianSkillMixin",
+    "UtilMixin"
+  ],
+  "client": [
+    "MinecraftClientMixin"
+  ],
+  "minVersion": "0.8"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " BB",
+        " SB",
+        "B  "
+    ],
+    
+    "key":
+    {
+        "B": { "item" : "minecraft:iron_ingot" },
+        "S": { "item" : "epicfight:iron_spear" }
+    },
+    
+    "result":
+    {
+        "item" : "cdmoveset:s_ironspear",
+        "count" : 1
+    }
+}

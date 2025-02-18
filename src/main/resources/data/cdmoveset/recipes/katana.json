@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "epicfight:uchigatana"
+    },
+    "addition": {
+        "item" : "minecraft:netherite_ingot"
+    },
+    "result": {
+        "item": "cdmoveset:katana"
+    }
+}

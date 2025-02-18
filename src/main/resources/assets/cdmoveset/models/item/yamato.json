@@ -1,0 +1,16 @@
+{
+  "overrides": [
+    {
+      "predicate": {
+        "cdmoveset:unsheathed": 0
+      },
+      "model": "cdmoveset:item/yamato_in_sheath"
+    },
+    {
+      "predicate": {
+        "cdmoveset:unsheathed": 1
+      },
+      "model": "cdmoveset:item/yamato_sheath"
+    }
+  ]
+}
